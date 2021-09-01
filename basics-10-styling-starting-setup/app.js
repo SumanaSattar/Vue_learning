@@ -11,13 +11,13 @@ methods:{
     selectedDiv(selected) {
         console.log('here')
        if ( selected === 'A') {
-           this.divAselected =true;
+           this.divAselected =!this.divAselected;
            console.log(this.divAselected);
        }else if ( selected === 'B') {
-        this.divBselected =true;
+        this.divBselected =!this.divBselected;
         console.log('B');
        }else if ( selected === 'C') {
-        this.divCselected =true;
+        this.divCselected =!this.divCselected;
         console.log('c');
     }
     } 

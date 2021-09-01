@@ -17,9 +17,9 @@
       <h1>Vue Dynamic Styling</h1>
     </header>
     <section id="styling">
-      <div class="demo" v-on:click="selectedDiv('A')" :style="{borderColor : divAselected ? 'red' : '#ccc'}"></div>
-      <div class="demo" v-on:click="selectedDiv('B')" :style="{borderColor : divBselected ? 'red' : '#ccc'}"></div>
-      <div class="demo" v-on:click="selectedDiv('C')" :style="{borderColor : divCselected ? 'red' : '#ccc'}"></div>
+      <div class="demo" v-on:click="selectedDiv('A')" :class="{active : divAselected}"></div>
+      <div class="demo" v-on:click="selectedDiv('B')":class="{active : divBselected}"></div>
+      <div class="demo" v-on:click="selectedDiv('C')" :class="{active : divCselected}"></div>
     </section>
   </body>
 </html>
