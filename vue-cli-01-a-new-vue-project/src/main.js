@@ -1,3 +1,7 @@
 import { createApp } from 'vue';
+import App from './App.vue';
+import card from './components/card.vue';
 
-createApp({}).mount('');
+const app = createApp(App);
+app.component('card',card);
+app.mount('#app');
